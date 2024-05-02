@@ -1,0 +1,16 @@
+<script>
+
+var n1 = parseFloat(prompt("Digite a nota da primeira avaliação:"));
+var n2 = parseFloat(prompt("Digite a nota da segunda avaliação:"));
+
+if (n1 >= 0 && n1 <= 10 && n2 >= 0 && n2 <= 10){
+    let media =  (n1 + n2) / 2;
+    if ( media >= 6){
+        alert("Você passou com a média de " + media.toFixed(1) + " .");
+    } else {
+        alert("Você não passou com a média de " + media.toFixed(1) + " .")
+    }
+} else {
+    alert("Não invalido");
+}
+</script>
